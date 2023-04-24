@@ -14,6 +14,9 @@ const globalErrorHandler = require('./dev-data/controllers/errorControllers');
 const AppError = require('./utils/appError');
 const app = express();
 const bodyParser = require('body-parser');
+const cors = require('cors');
+
+app.use(cors());
 
 //1 . GLOBAL MIDDLEWARES
 app.use(express.static(path.join(__dirname, 'public')));
