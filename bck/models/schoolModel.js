@@ -9,7 +9,10 @@ const schoolSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  image: {
+  imageBg: {
+    type: String,
+  },
+  imageFront: {
     type: String,
   },
   history: {
